@@ -12,17 +12,13 @@ const Profile = () => {
     })
 
     if (status === "loading") {
-        <p>Loading</p>
-    }
-
-    if (session) {
-        console.log(session.user.name);
+        return <p>Loading</p>
     }
 
     return (
         <>
             <MainLayout>
-                <p>Wellcome {session ? <span>{session.user.name}</span> : "Dear User"} </p>
+                <p>Wellcome {session.user.name}</p>
             </MainLayout>
         </>
     )
