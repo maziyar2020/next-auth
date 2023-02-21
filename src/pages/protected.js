@@ -5,7 +5,7 @@ const Protected = () => {
     console.log(session);
     return ( 
         <div>
-            protected
+            protected <p>{session.user.name}</p>
         </div>
      );
 }
